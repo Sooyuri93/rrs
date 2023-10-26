@@ -1,4 +1,4 @@
-package com.jyujyu.review.api.respnse;
+package com.jyujyu.review.api.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

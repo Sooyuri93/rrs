@@ -1,4 +1,4 @@
-package com.jyujyu.review.api.respnse;
+package com.jyujyu.review.api.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -25,7 +25,7 @@ public class RestaurantDetailView {
         private final Long id;
         private final String name;
         private final int price;
-        private final ZonedDateTime createdsAt;
+        private final ZonedDateTime createdAt;
         private final ZonedDateTime updatedAt;
     }
 }

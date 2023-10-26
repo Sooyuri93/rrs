@@ -1,9 +1,8 @@
 package com.jyujyu.review.service;
 
 import com.jyujyu.review.api.reqeust.CreateAndEditRestaurantRequest;
-import com.jyujyu.review.api.reqeust.CreateAndEditRestaurantRequestMenu;
-import com.jyujyu.review.api.respnse.RestaurantDetailView;
-import com.jyujyu.review.api.respnse.RestaurantView;
+import com.jyujyu.review.api.response.RestaurantDetailView;
+import com.jyujyu.review.api.response.RestaurantView;
 import com.jyujyu.review.model.Restaurant;
 import com.jyujyu.review.model.RestaurantMenu;
 import com.jyujyu.review.repository.MenuRepository;
@@ -11,9 +10,7 @@ import com.jyujyu.review.repository.RestaurantRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.awt.*;
 import java.time.ZonedDateTime;
 import java.util.List;
 
@@ -52,7 +49,7 @@ public class RestaurantService {
                                 .id(menu.getId())
                                 .name(menu.getName())
                                 .price(menu.getPrice())
-                                .createdsAt(menu.getCreatedAt())
+                                .createdAt(menu.getCreatedAt())
                                 .updatedAt(menu.getUpdatedAt())
                                 .build())
                         .toList()

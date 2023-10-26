@@ -1,14 +1,12 @@
 package com.jyujyu.review.api;
 
 import com.jyujyu.review.api.reqeust.CreateAndEditRestaurantRequest;
-import com.jyujyu.review.api.respnse.RestaurantDetailView;
-import com.jyujyu.review.api.respnse.RestaurantView;
-import com.jyujyu.review.model.Restaurant;
+import com.jyujyu.review.api.response.RestaurantDetailView;
+import com.jyujyu.review.api.response.RestaurantView;
 import com.jyujyu.review.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.ZonedDateTime;
 import java.util.List;
 
 @RestController
